@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="home">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="https://minimalissimo.com/assets/favicons/browserconfig.xml">
+
+    <!-- Preload the fonts -->
+    <link rel="preload" href="https://minimalissimo.com/assets/css/fonts/Inter.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+
+
+    <!-- Titles -->
+    <meta content="Shubhcode Minimal" itemprop="name">
+    <meta content="Shubhcode Minimal" name="twitter:title">
+    <meta content="Shubhcode Minimal" property="og:title">
+    <meta content="Shubhcode Minimal" property="og:site_name">
+
+    <!-- Descriptions -->
+    <meta content="lol" name="description">
+    <meta content="lolwa" itemprop="description">
+    <meta content="lol" name="twitter:description">
+    <meta content="lol" property="og:description">
+
+    <!-- Twitter:extra -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@shubhcode">
+
+    <!-- Facebook:extra -->
+    <meta property="og:url" content="https://shubhcoder.com">
+    <meta property="og:type" content="website">
+
+    <!-- Page Title -->
+    <title>Shubhcode Minimal</title>
+
+    <script src="./assets/lib/js.cookie.min.js"></script>
+    <script src="./assets/js/cookie.js"></script>
+    <script src="./assets/js/setColorScheme.js"></script>
+    <script src="./assets/js/toggleColorScheme.js"></script>
+
+    <!-- Stylesheet -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="home">
+    <header class="header">
+        <div class="header-inner border-bottom">
+            <a class="header-home" href="#" aria-label="Homepage">
+                <svg class="logo" width="449" height="200" viewBox="0 0 479 230" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="429" y="111" width="26" height="47" transform="rotate(-90 429 111)" />
+                    <rect x="429" y="230" width="26" height="204" transform="rotate(-180 429 230)" />
+                    <rect x="479" y="204" width="26" height="204" transform="rotate(-180 479 204)" />
+                    <rect x="325" y="26" width="26" height="47" transform="rotate(-90 325 26)" />
+                    <rect x="325" y="137" width="26" height="47" transform="rotate(-90 325 137)" />
+                    <rect x="325" y="204" width="26" height="47" transform="rotate(-90 325 204)" />
+                    <rect x="325" y="204" width="26" height="204" transform="rotate(-180 325 204)" />
+                    <rect x="385" y="204" width="26" height="204" transform="rotate(-180 385 204)" />
+                    <rect x="228" y="230" width="26" height="47" transform="rotate(-90 228 230)" />
+                    <rect x="228" y="230" width="26" height="204" transform="rotate(-180 228 230)" />
+                    <rect x="281" y="230" width="26" height="145" transform="rotate(-180 281 230)" />
+                    <rect x="134" y="111" width="26" height="47" transform="rotate(-90 134 111)" />
+                    <rect x="134" y="230" width="26" height="204" transform="rotate(-180 134 230)" />
+                    <rect x="184" y="204" width="26" height="204" transform="rotate(-180 184 204)" />
+                    <rect x="81" y="230" width="26" height="138" transform="rotate(-180 81 230)" />
+                    <rect x="34" y="111" width="26" height="47" transform="rotate(-90 34 111)" />
+                    <rect y="230" width="26" height="67" transform="rotate(-90 0 230)" />
+                    <rect x="9.00001" y="26" width="26" height="138" />
+                    <rect x="56" y="145" width="26" height="47" transform="rotate(90 56 145)" />
+                    <rect x="90" y="26" width="26" height="67" transform="rotate(90 90 26)" />
+                </svg>
+
+            </a>
+
+            <button class="header-btn btn-scheme" onclick="mimoToggleColorScheme()" aria-label="Reading Mode">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                    <circle class="outer" cx="10" cy="10" r="8" />
+                    <circle class="inner" cx="10" cy="10" r="6" />
+                </svg>
+            </button>
+
+            <button class="header-btn btn-search" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                    <path fill-rule="nonzero"
+                        d="M14.906 16.32a8 8 0 1 1 1.414-1.414l3.751 3.751-1.414 1.414-3.751-3.751zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                </svg>
+            </button>
+
+            <form class="search-form" action="https://minimalissimo.com/search" method="get">
+                <input type="search" name="s" id="s" class="search-input border-around" required placeholder="Search…">
+                <button class="search-submit" type="submit" aria-label="Search Submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                        <path fill-rule="nonzero"
+                            d="M14.906 16.32a8 8 0 1 1 1.414-1.414l3.751 3.751-1.414 1.414-3.751-3.751zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                    </svg>
+                </button>
+            </form>
+
+        </div>
+    </header>
+
+    <div class="menu">
+        <button class="menu-btn border-bottom" onclick="document.querySelector('.menu').classList.toggle('is-open')"
+            aria-label="Light/Dark Mode">Menu</button>
+        <nav class="menu-inner border-bottom">
+            <a class=" menu-item" href="#" target="_self">Home</a>
+            <a class=" menu-item" href="#" target="_self">Work</a>
+            <a class=" menu-item" href="#" target="_self">Articles</a>
+            <a class=" menu-item" href="#" target="_self">Contact</a>
+            <a class=" menu-item" href="#" target="_self">About</a>
+        </nav>
+    </div>
+    <main class="grid"
+        data-infinite-scroll='{ "path": "/home/page:{{#}}/", "append": "main .thumbnail", "history": "replace","button" : ".loadmore-button", "scrollThreshold": "false" }'>
+
+
+
+
+
+        <article class="thumbnail" data-orientation="landscape">
+            <figure class="thumbnail-container">
+                <a href="#" class="thumbnail-holder" aria-label="View Feature" rel="noreferrer">
+                    <img alt="" class="thumbnail-image" sizes="(max-width: 446px) 100%,(max-width: 844px) 402px,504px"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=402&amp;h=268&amp;q=60"
+                        srcset="https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=402&amp;h=268&amp;q=60 402w,https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=504&amp;h=336&amp;q=60 504w,https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=402&amp;h=268&amp;q=60&amp;dpr=2 804w,https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=504&amp;h=336&amp;q=60&amp;dpr=2 1008w">
+                </a>
+                <figcaption class="thumbnail-info">
+                    <h1 class="thumbnail-title"><a class="thumbnail-link" href="#">Title</h1></a>
+                    <div class="thumbnail-text"><a href="#">Moods</a></div>
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="thumbnail" data-orientation="landscape">
+            <figure class="thumbnail-container">
+                <a href="#" class="thumbnail-holder" aria-label="View Feature" rel="noreferrer">
+                    <img alt="" class="thumbnail-image" sizes=""
+                        src="https://images.unsplash.com/photo-1500239038240-9b3b8bac73c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+                </a>
+                <figcaption class="thumbnail-info">
+                    <h1 class="thumbnail-title"><a class="thumbnail-link" href="#">Title</h1></a>
+                    <div class="thumbnail-text"><a href="#">Moods</a></div>
+                </figcaption>
+            </figure>
+        </article>
+
+
+        <article class="thumbnail" data-orientation="landscape">
+            <figure class="thumbnail-container">
+                <a href="#" class="thumbnail-holder" aria-label="View Feature" rel="noreferrer">
+                    <img alt="" class="thumbnail-image" sizes="(max-width: 446px) 400px,(max-width: 844px) 268px,336px"
+                        src="https://images.unsplash.com/photo-1496124248071-3e497bb1696c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=947&q=80">
+                </a>
+                <figcaption class="thumbnail-info">
+                    <h1 class="thumbnail-title"><a class="thumbnail-link" href="#">Title</h1></a>
+                    <div class="thumbnail-text"><a href="#">Moods</a></div>
+                </figcaption>
+            </figure>
+        </article>
+
+
+        <article class="thumbnail" data-orientation="landscape">
+            <figure class="thumbnail-container">
+                <a href="#" class="thumbnail-holder" aria-label="View Feature" rel="noreferrer">
+                    <img alt="" class="thumbnail-image" sizes="(max-width: 446px) 100%,(max-width: 844px) 402px,504px"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=402&amp;h=268&amp;q=60"
+                        srcset="https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=402&amp;h=268&amp;q=60 402w,https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=504&amp;h=336&amp;q=60 504w,https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=402&amp;h=268&amp;q=60&amp;dpr=2 804w,https://mir-s3-cdn-cf.behance.net/project_modules/1400/26072b81495269.5d0124d686d56.jpg?w=504&amp;h=336&amp;q=60&amp;dpr=2 1008w">
+                </a>
+                <figcaption class="thumbnail-info">
+                    <h1 class="thumbnail-title"><a class="thumbnail-link" href="#">Title</h1></a>
+                    <div class="thumbnail-text"><a href="#">Moods</a></div>
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="thumbnail" data-orientation="landscape">
+            <figure class="thumbnail-container">
+                <a href="#" class="thumbnail-holder" aria-label="View Feature" rel="noreferrer">
+                    <img alt="" class="thumbnail-image" sizes="(max-width: 446px) 100%,(max-width: 844px) 402px,504px"
+                        src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </a>
+                <figcaption class="thumbnail-info">
+                    <h1 class="thumbnail-title"><a class="thumbnail-link" href="#">Title</h1></a>
+                    <div class="thumbnail-text"><a href="#">Moods</a></div>
+                </figcaption>
+            </figure>
+        </article>
+
+
+
+    </main>
+
+    <section class="newsletter">
+        <div class="newsletter-container border-top">
+            <form class="newsletter-form embeddable-buttondown-form"
+                action="https://buttondown.email/api/emails/embed-subscribe/minimalissimo" method="post"
+                target="popupwindow" onsubmit="window.open('https://instagram.com/shubhcode', 'popupwindow')">
+                <input id="bd-email" name="email" type="email" class="newsletter-input"
+                    placeholder="Subscribe to the newsletter">
+                <label class="newsletter-label" for="bd-email">Email Address</label>
+                <input type="hidden" value="1" name="embed"></input>
+                <input type="submit" value="→" class="newsletter-btn"></input>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <nav class="footer-links border-top">
+
+            <a class="footer-home" href="#" aria-label="Homepage">
+                <svg class="logo" width="449" height="200" viewBox="0 0 479 230" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="429" y="111" width="26" height="47" transform="rotate(-90 429 111)" />
+                    <rect x="429" y="230" width="26" height="204" transform="rotate(-180 429 230)" />
+                    <rect x="479" y="204" width="26" height="204" transform="rotate(-180 479 204)" />
+                    <rect x="325" y="26" width="26" height="47" transform="rotate(-90 325 26)" />
+                    <rect x="325" y="137" width="26" height="47" transform="rotate(-90 325 137)" />
+                    <rect x="325" y="204" width="26" height="47" transform="rotate(-90 325 204)" />
+                    <rect x="325" y="204" width="26" height="204" transform="rotate(-180 325 204)" />
+                    <rect x="385" y="204" width="26" height="204" transform="rotate(-180 385 204)" />
+                    <rect x="228" y="230" width="26" height="47" transform="rotate(-90 228 230)" />
+                    <rect x="228" y="230" width="26" height="204" transform="rotate(-180 228 230)" />
+                    <rect x="281" y="230" width="26" height="145" transform="rotate(-180 281 230)" />
+                    <rect x="134" y="111" width="26" height="47" transform="rotate(-90 134 111)" />
+                    <rect x="134" y="230" width="26" height="204" transform="rotate(-180 134 230)" />
+                    <rect x="184" y="204" width="26" height="204" transform="rotate(-180 184 204)" />
+                    <rect x="81" y="230" width="26" height="138" transform="rotate(-180 81 230)" />
+                    <rect x="34" y="111" width="26" height="47" transform="rotate(-90 34 111)" />
+                    <rect y="230" width="26" height="67" transform="rotate(-90 0 230)" />
+                    <rect x="9.00001" y="26" width="26" height="138" />
+                    <rect x="56" y="145" width="26" height="47" transform="rotate(90 56 145)" />
+                    <rect x="90" y="26" width="26" height="67" transform="rotate(90 90 26)" />
+                </svg>
+            </a>
+
+            <span class="footer-link-container">
+                <a class="footer-link" href="#">Contacts</a>
+                <a class="footer-link" href="#">Terms</a>
+                <a class="footer-link" href="#">Privacy</a>
+            </span>
+
+            <span class="footer-link-container footer-socials">
+                <a class="footer-link footer-social" target="_blank" href="https://twitter.com/shubhcode/"
+                    rel="noreferrer">Twitter</a>
+                <a class="footer-link footer-social" target="_blank" href="https://www.instagram.com/shubhcode/"
+                    rel="noreferrer">Instagram</a>
+                <a class="footer-link footer-social" target="_blank" href="https://www.facebook.com/shubhcode"
+                    rel="noreferrer">Facebook</a>
+            </span>
+
+        </nav>
+    </footer>
+    <script src="https://minimalissimo.com/assets/js/search.js"></script>
+</body>
+
+</html>
